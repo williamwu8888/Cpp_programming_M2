@@ -3,6 +3,16 @@
 
 #include "doctest.h"
 // include your classes here
+#include "../headers/ExpLog.hh"
+#include "../headers/Atom.hh"
+#include "../headers/ExpNot.hh"
+#include "../headers/ExpAnd.hh"
+#include "../headers/ExpOr.hh"
+
+// Add using declarations for the enum values
+using ThreeVal::U;
+using ThreeVal::T;
+using ThreeVal::F;
 
 TEST_SUITE("threeval") {
   TEST_CASE("1: Atoms toString") {
