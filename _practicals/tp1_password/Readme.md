@@ -28,8 +28,8 @@ make clean                      # Compile le programme principal
 make clean --directory=tests    # Compile les tests unitaires
 ```
 
-## Git ?
+## Github
 
-A la fin de la séance votre projet doit étre mis dans le répo avec la commande
+*Lien pour le github du projet.*
 
-`` git push ``
+https://github.com/williamwu8888/Cpp_programming_M2/tree/master/_practicals/tp1_password
