@@ -1,8 +1,8 @@
 CC = g++
 CCFLAGS = -Wall -Werror -std=c++11 -g -I../headers
 
-# Source files from ../file/ directory
-SRC_DIR = ../file
+# Source files from ../src/ directory
+SRC_DIR = ../src
 SRC = $(wildcard $(SRC_DIR)/*.cc)
 OBJ = $(SRC:$(SRC_DIR)/%.cc=%.o)
 
@@ -13,7 +13,7 @@ OBJ_TEST = $(filter-out main.o, $(OBJ)) $(TST:.cc=.o)
 testcase: $(OBJ_TEST) 
 	$(CC) $(CCFLAGS) -o $@ $^
 
-# Rule for source files in ../file/ directory
+# Rule for source files in ../src/ directory
 %.o: $(SRC_DIR)/%.cc
 	$(CC) $(CCFLAGS) -c $< -o $@
 
