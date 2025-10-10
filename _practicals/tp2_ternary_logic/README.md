@@ -47,6 +47,7 @@ project/
 ├── doctest.h
 └── Makefile
 
+![Diagramme UML de ce projet](UML_diagram.svg)
 
 ## Truth Tables
 
