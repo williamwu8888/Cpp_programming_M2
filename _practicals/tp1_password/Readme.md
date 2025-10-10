@@ -28,8 +28,13 @@ make clean                      # Compile le programme principal
 make clean --directory=tests    # Compile les tests unitaires
 ```
 
+## Diagramme UML
+
+![Diagramme UML de ce projet](UML_diagram.svg)
+
 ## Github
 
-*Lien pour le github du projet.*
+*Lien personne du github pour cette séance de tp.*
 
 https://github.com/williamwu8888/Cpp_programming_M2/tree/master/_practicals/tp1_password
+
