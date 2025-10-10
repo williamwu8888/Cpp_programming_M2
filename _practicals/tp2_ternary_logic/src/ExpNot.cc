@@ -15,5 +15,9 @@ ThreeVal::ThreeVal_t ExpNot::evaluate() const {
 }
 
 void ExpNot::truthTable() {
-    // Implementation for truth table if needed
+    // Just print the truth table for NOT operation
+    std::cout << "NOT Truth Table:" << std::endl;
+    std::cout << "!F = T" << std::endl;
+    std::cout << "!T = F" << std::endl; 
+    std::cout << "!U = U" << std::endl;
 }
