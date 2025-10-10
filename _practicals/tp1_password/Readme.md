@@ -30,11 +30,14 @@ make clean --directory=tests    # Compile les tests unitaires
 
 ## Diagramme UML
 
+*Diagramme UML, fait à l'aide de l'ia et de Mermaidchart.*
+
 ![Diagramme UML de ce projet](UML_diagram.svg)
+
 
 ## Github
 
-*Lien personne du github pour cette séance de tp.*
+*Lien personnel du github pour cette séance de tp.*
 
 https://github.com/williamwu8888/Cpp_programming_M2/tree/master/_practicals/tp1_password
 
