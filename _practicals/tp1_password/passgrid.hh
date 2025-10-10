@@ -11,9 +11,9 @@ class PassGrid{
   PassGrid(const PassGrid & p);
   ~PassGrid();
   //getter
-  std::size_t getW() const {std::cerr << "getW(): Not yet Implemented" << std::endl; return 1;}
-  std::size_t getH() const {std::cerr << "getH(): Not yet Implemented" << std::endl; return 1;}
-  char operator()(size_t i, size_t j) const {std::cerr << "operator(): Not yet Implemented" << std::endl; return 1;}
+  std::size_t getW() const { return _w; }
+  std::size_t getH() const { return _h; }
+  char operator()(size_t i, size_t j) const { return grid[i][j]; }
   //Operation
   void reset();
   void save(std::ostream&) const;

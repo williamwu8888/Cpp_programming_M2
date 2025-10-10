@@ -6,6 +6,8 @@
 #include "passgrid.hh"
 #include "path.hh"
 #include <fstream>
+#include <sstream>
+#include <string>
 
 
 bool notEqualGrids (PassGrid& p0, PassGrid& p1)
@@ -100,5 +102,17 @@ TEST_SUITE("path"){
           CHECK(p.getStartY() >= 0);
           CHECK(p.getStartY() <= 8);
         }
+    }
+
+    // Added test for toString method
+    TEST_CASE("8: Path toString contains coordinates") 
+    {
+      Path p(3, 5, 5);
+      std::string str = p.toString();
+      
+      // Should contain coordinate format
+      CHECK(str.find("(") != std::string::npos);
+      CHECK(str.find(")") != std::string::npos);
+      CHECK(str.find(",") != std::string::npos);
     }
 }

@@ -6,7 +6,7 @@ OBJ= $(SRC:.cc=.o)
 TST_DIR=tests/
 TST= $(wildcard $(TST_DIR)/*.cc)
 OBJ_TEST = $(filter-out main.o, $(OBJ)) $(TST:.cc=.o)
-EXEC= passgrid.out 
+EXEC= main.exe
 
 
 all: $(EXEC)
@@ -25,7 +25,7 @@ $(EXEC): $(OBJ)
 -include .depends
 
 clean:
-	rm -f $(OBJ) $(EXEC)
+	del *.o *.exe *.out
 cleantest:
 	cd $(TST_DIR); make clean
 distclean : clean cleantest
