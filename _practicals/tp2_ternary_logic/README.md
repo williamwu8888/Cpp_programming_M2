@@ -102,7 +102,7 @@ std::string exprStr = orExpr.toString();
 ```bash
 cd test
 make
-./test_executable
+.\testcase.exe
 ```
 
 ### Running Tests
